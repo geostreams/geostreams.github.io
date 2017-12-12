@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>GeoDashboard - Visualizations for geo temporal data</title>
+
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">GeoDashboard</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="https://opensource.ncsa.illinois.edu/confluence/display/GEOD/">Docs</a>
+                    </li>
+                    <!--<li>-->
+                        <!--<a href="https://geodashboard.ncsa.illinois.edu/geodashboard/">Demo</a>-->
+                    <!--</li>-->
+                    <li>
+                        <a class="page-scroll" href="#funding">Funding</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#publications">Publications</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <img class="img-responsive logo" src="img/logo.png"></img>
+                <h1>Open source data visualizations for geotemporal data  </h1>
+                <!--<p>Build customized <i>cat</i>alogs in the clouds to help you manage your research data.</p>-->
+                <p>Customizable visualization for spatial and temporal data </p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading">A scalable geotemporal visualization system you can install in your own cloud.</h2>
+                    <hr class="primary">
+                    <p class="text-faded">
+                        Geodashboard is a system for visualizing spatial and temporal data. It involves data being parsed
+                        from excel or csv files into organization of sensors, streams and datapoints. Datapoints are
+                        visualized as time series, depth graphs, stacked bar graphs or stacked line graphs depending
+                        on the nature of the data. The core software has been in development for the past five years
+                        with <a class="page-scroll" href="#funding">funding from a variety of sources</a>.
+                        <!--You can try the <a href="https://geodashboard.ncsa.illinois.edu/geodashboard/">demo</a> site or start-->
+                        <!--<a href="https://opensource.ncsa.illinois.edu/confluence/display/CATS/Installing+Clowder">installing</a>-->
+                        <!--the software on your resources.-->
+                        If you have any questions please <a href="mailto:geodashboard@lists.illinois.edu">email</a> us or join
+                        us on <a href="https://hipchat.ncsa.illinois.edu/chat/room/6">HipChat</a>.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <!--<a href="https://geodashboard.ncsa.illinois.edu/geodashboard/" class="btn btn-default btn-xl">Demo site</a>-->
+                    <a href="https://opensource.ncsa.illinois.edu/confluence/display/GEOD" class="btn btn-default btn-xl">Documentation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Built to be extensible</h2>
+                    <hr class="primary">
+                    <p> Visualizations for data can be easily customized. Data displayed on Geodashboard comes from
+                        different data sources, new parsers are written for each source using
+                        <a href="https://opensource.ncsa.illinois.edu/bitbucket/projects/GEOD/repos/pygeotemporal/browse"
+                          > Pygeotemporal</a>. Raw data obtained from the original sources
+                        is stored on <a href="https://clowder.ncsa.illinois.edu/">  Clowder</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-primary" id="funding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Funding Sources</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <ul class="list-unstyled funding-list">
+                        <li>Illinois-Indiana Sea Grant – Great Lakes Monitoring</li>
+                        <li>NGREC and Walton Foundation - Great Lakes to Gulf Virtual Observatory</li>
+                        <li>NSF EAR – Critical Zone Observatory Network for Intensively Managed Landscapes (IML-CZO)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark no-padding">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="https://greatlakesmonitoring.org/" class="portfolio-box">
+                        <img src="img/portfolio/glm.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Project
+                                </div>
+                                <div class="project-name">
+                                    Great Lakes Monitoring
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="https://greatlakestogulf.org/" class="portfolio-box">
+                        <img src="img/portfolio/gltg.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Project
+                                </div>
+                                <div class="project-name">
+                                    Great Lakes to Gulf Virtual Observatory
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="http://criticalzone.org/iml/" class="portfolio-box">
+                        <img src="img/portfolio/imlczo.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Project
+                                </div>
+                                <div class="project-name">
+                                    IML Critical Zone Observatory
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Publications</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul>
+                        <li>I. Gutierrez-Polo et al., "Monitoring Water Quality in the Great Lakes Leveraging
+                            Geo-Temporal Cyberinfrastructure," <i>2017 IEEE 13th International Conference on
+                                e-Science (e-Science)</i>, Auckland, New Zealand, 2017, pp. 364-373.
+                            doi: 10.1109/eScience.2017.50 </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="bg-dark" id="portfolio">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>Join the <a href="https://opensource.ncsa.illinois.edu/bitbucket/projects/GEOD/repos/geodashboard-v3/browse/CONTRIBUTORS.md"> Geodashboard</a> Team,
+                    check out the code, start contributing!</h2>
+                <a href="https://opensource.ncsa.illinois.edu/bitbucket/projects/GEOD" class="btn btn-default btn-xl wow tada">Source Code</a>
+            </div>
+        </div>
+    </aside>
+
+    <section class="bg-primary" id="thanks">
+    <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Special thanks</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    We are very thankful to the following companies for letting us use their wonderful software for free to develop Clowder under an open source license:
+                     <ul class="list-unstyled funding-list">
+                        <li><a href="https://www.jetbrains.com/">JetBrains</a> for kindly giving us an open source license for their awesome IntelliJ IDEA</li>
+                        <li><a href="https://www.atlassian.com">Atlassian</a> for kindly giving us an open source license to their software development products that make our daily efforts so much easier</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3">
+                    <a href="http://illinois.edu/">
+                        <img class="img-responsive" style="width: 60px" src="img/logos_uiuc.png"></img>
+                    </a>
+                </div>
+                <div class="col-xs-3">
+                    <a href="http://www.ncsa.illinois.edu/">
+                        <img class="img-responsive" style="width: 110px" src="img/logos_ncsa.png"></img>
+                    </a>
+                </div>
+                <div class="col-xs-3">
+                    <a href="http://ssa.ncsa.illinois.edu/isda/">
+                        <img class="img-responsive" src="img/isda_logo.png"></img>
+                    </a>
+                </div>
+                <div class="col-xs-3 text-center">
+                    <div class="row">
+                        <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                        <p>Mailing List</br>
+                        <a href="mailto:geodashboard@lists.illinois.edu">geodashboard@lists.illinois.edu</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+</html>
