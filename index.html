@@ -48,7 +48,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">GeoDashboard</a>
+                <a class="navbar-brand page-scroll" href="#page-top">Geostreaming Data Framework </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -83,10 +83,18 @@
         <div class="header-content">
             <div class="header-content-inner">
                 <img class="img-responsive logo" src="img/logo.png"></img>
-                <h1>Open source data visualizations for geotemporal data  </h1>
+                <!--<h1 style="font-size: 30px;">Open source data management and visualizations for geotemporal daaaaata  </h1>-->
+                <h2> Open source data management and visualizations for geotemporal data</h2>
                 <!--<p>Build customized <i>cat</i>alogs in the clouds to help you manage your research data.</p>-->
-                <p>Customizable visualization for spatial and temporal data </p>
+                <!--<p> The geostreaming data framework allows for heterogeneous data to be converted into a flexible schema,-->
+                    <!--a REST API to retrieve and perform computations on the data, and a web application with visualizations-->
+                    <!--for end users to interact with the data addressing the needs of different communities.</p>-->
+                <p> The geostreaming data framework allows for heterogeneous data to be converted into a flexible schema,
+                    provides a web application with data visualizations for end-users to interact with the data and a REST
+                    API to create additional web clients and perform computations of the data. </p>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+
+
             </div>
         </div>
     </header>
@@ -95,19 +103,30 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="section-heading">A scalable geotemporal visualization system you can install in your own cloud.</h2>
+                    <h2 class="section-heading">What is Geostreaming Data Framework?</h2>
                     <hr class="primary">
+
+
                     <p class="text-faded">
-                        Geodashboard is a system for visualizing spatial and temporal data. It involves data being parsed
-                        from excel or csv files into organization of sensors, streams and datapoints. Datapoints are
-                        visualized as time series, depth graphs, stacked bar graphs or stacked line graphs depending
-                        on the nature of the data. The core software has been in development for the past five years
-                        with <a class="page-scroll" href="#funding">funding from a variety of sources</a>.
-                        <!--You can try the <a href="https://geodashboard.ncsa.illinois.edu/geodashboard/">demo</a> site or start-->
-                        <!--<a href="https://opensource.ncsa.illinois.edu/confluence/display/CATS/Installing+Clowder">installing</a>-->
-                        <!--the software on your resources.-->
-                        If you have any questions please <a href="mailto:geodashboard@lists.illinois.edu">email</a> us or join
-                        us on <a href="https://hipchat.ncsa.illinois.edu/chat/room/6">HipChat</a>.
+                    <ul>
+                        <li>
+                            Geostreaming data framework is a set of open source software (
+                            <a href="https://opensource.ncsa.illinois.edu/bitbucket/projects/GEOD"> NCSA</a>
+                            ) tools to help researchers manage and visualize
+                            geo temporal data.
+                        </li>
+                        <li> You can install Geostreaming data framework as needed
+                            for your project in the cloud, on your hardware, or you can partner with
+                            <a href="mailto:lmarini@illinois.edu">NCSA</a>  for a custom instance.
+                        </li>
+                        <li>
+                            The geostreaming data framework is built to be extensible and support new use cases and
+                            <a href="#projects"> domains</a>.
+                        </li>
+                        <li> Questions? Join the team on the <a href="mailto:geodashboard@lists.illinois.edu">mailing list</a>. </li>
+
+                    </ul>
+
                     </p>
                 </div>
             </div>
@@ -120,24 +139,93 @@
         </div>
     </section>
 
-    <section id="services">
+    <section id="application">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                <h2 class="section-heading">A scalable geotemporal data management and visualization system</h2>
+                    <hr class="primary">
+                </div>
+
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box">
+
+                        <i class="fa fa-4x fa-code wow bounceIn"></i>
+                        <h3>GeoStreaming API</h3>
+                        <p >
+                            A REST API where you can interact with the data. Specific computation for visualizing data
+                            is performed in the Geostreaming Api, including computations for bins for the data at different
+                            time scales including day, month, season and year. It also calculate trends per parameter
+                            for single sensors or a region.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-line-chart wow bounceIn"></i>
+                        <h3>Geodashboard</h3>
+                        <p>
+                            This is a web-application that allows users to browse and search geo-spatial data in a map.
+                            It has visualizations for each location that can be customized to match the community needs.
+                            We currently support time-series, box and whiskers, stacked line and stacked bar graphs.
+                            Code is developed in React + Redux graphs are created with d3.js and new graphs can be easily added.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-code-fork wow bounceIn"></i>
+                        <h3>Parsers</h3>
+                        <p>
+                            Data from heterogeneous sources that include images collected from drones or field scanners,
+                            sensors in the field, results of labs analyses, remote sensing data, or historical data from
+                            heterogeneous sources can be ingested into the geostreaming API with the help of parsers.
+                            A Python library
+                            <a href="https://opensource.ncsa.illinois.edu/bitbucket/projects/GEOD/repos/pygeotemporal">
+                                PyGeotemporal</a>
+                            has been created to facilitate writting new parsers.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-primary" id="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Built to be extensible</h2>
                     <hr class="primary">
-                    <p> Visualizations for data can be easily customized. Data displayed on Geodashboard comes from
-                        different data sources, new parsers are written for each source using
-                        <a href="https://opensource.ncsa.illinois.edu/bitbucket/projects/GEOD/repos/pygeotemporal/browse"
-                          > Pygeotemporal</a>. Raw data obtained from the original sources
-                        is stored on <a href="https://clowder.ncsa.illinois.edu/">  Clowder</a>.
+                </div>
+                <p>
+                <div class="col-lg-12">
+                    <ul>
+                        <li>
+                            Supports heterogeneous sources of data: embedded in images from drones or field scanners,
+                            sensors in the fields, results of lab analyses, remote sensing data, historical data obtained
+                            from federal and state sources.
+                        </li>
+                        <li>
+                            Data can be visualized in different graphs. And new graphs can be created using
+                            <a href="https://d3js.org/"> d3.js</a>.
+                        </li>
+                        <li>
+                            Users can browse and search data based on location, source of data, paremeters or time frame.
+                        </li>
+                        <li>
+                            The geostreaming data framework components work great together. But are designed to work
+                            on their own if you are only interested in one of them.
+                        </li>
+                    </ul>
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-primary" id="funding">
+    <section id="funding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -153,13 +241,15 @@
                         <li>Illinois-Indiana Sea Grant – Great Lakes Monitoring</li>
                         <li>NGREC and Walton Foundation - Great Lakes to Gulf Virtual Observatory</li>
                         <li>NSF EAR – Critical Zone Observatory Network for Intensively Managed Landscapes (IML-CZO)</li>
+                        <li>ARPA-E - TERRA-REF</li>
+                        <li>CDC - Vector Borne Disease</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-dark no-padding">
+    <section id="projects" class="bg-dark no-padding">
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
@@ -208,6 +298,39 @@
                     </a>
                 </div>
             </div>
+            <div class="row no-gutter">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="http://terraref.org/" class="portfolio-box">
+                        <img src="img/portfolio/terraref.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Project
+                                </div>
+                                <div class="project-name">
+                                    TERRA-REF
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="http://ssa.ncsa.illinois.edu/isda/vector-borne-disease/" class="portfolio-box">
+                        <img src="img/portfolio/vector_borne_disease.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Project
+                                </div>
+                                <div class="project-name">
+                                    Vector Borne Disease
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -222,10 +345,19 @@
             <div class="row">
                 <div class="col-lg-12">
                     <ul>
-                        <li>I. Gutierrez-Polo et al., "Monitoring Water Quality in the Great Lakes Leveraging
+                        <li>I. Gutierrez-Polo, Y. Zhao, S. Bradley, E. Roeder, M. Pitcel, K. Tepas, P. Collingsworth,
+                            L. Marini. "Monitoring Water Quality in the Great Lakes Leveraging
                             Geo-Temporal Cyberinfrastructure," <i>2017 IEEE 13th International Conference on
                                 e-Science (e-Science)</i>, Auckland, New Zealand, 2017, pp. 364-373.
                             doi: 10.1109/eScience.2017.50 </li>
+                        <li> M. Burnette, R. Kooper, J. D. Maloney, G. S. Rohde, J. A. Terstriep, C. Willis, N. Fahlgren,
+                            T. Mockler, M. Newcomb, V. Sagan, P. Andrade-Sanchez, N. Shakoor, P. Sidike, R. Ward, and
+                            D. LeBauer. 2018. TERRA-REF Data Processing Infrastructure. In Proceedings of the Practice
+                            and Experience on Advanced Research Computing (PEARC '18). ACM, New York, NY, USA, Article
+                            27, 7 pages. DOI: https://doi.org/10.1145/3219104.3219152</li>
+                        <li> Kooper, R., et al. "Information Architecture Used to Manage Multi-Domain Data Analysis in
+                            Intensively Managed Landscape-Critical Zone Observatory." AGU Fall Meeting Abstracts. 2016.
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -256,7 +388,6 @@
                 <div class="col-lg-12 text-center">
                     We are very thankful to the following companies for letting us use their wonderful software for free to develop Clowder under an open source license:
                      <ul class="list-unstyled funding-list">
-                        <li><a href="https://www.jetbrains.com/">JetBrains</a> for kindly giving us an open source license for their awesome IntelliJ IDEA</li>
                         <li><a href="https://www.atlassian.com">Atlassian</a> for kindly giving us an open source license to their software development products that make our daily efforts so much easier</li>
                     </ul>
                 </div>
